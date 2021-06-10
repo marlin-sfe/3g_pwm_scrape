@@ -1,0 +1,7 @@
+.vs
+.git
+3G_htc_pwm.componentinfo.xml
+3G_htc_pwm.cproj
+/Debug
+_*
+*.sh
