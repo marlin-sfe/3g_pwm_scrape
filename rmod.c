@@ -211,8 +211,6 @@ void Snr_Wand_Parameter(void) {
       carbon_copy = (uniw[FLG_CSW].byte[0] &
             (_SGNL_CTL | _2ND_SGNL | _MERCURY));
    }
-/***** REMOVE AFTER TESTING *****
- ***** ALSO REMOVE UNUSED VARIABLES *****
    // test if unit should toggle from one wand to the other
    if (unib[SNR_STAT].byte & 0x04) { // test if second wand is present
       if (TST_MERCURY ^ (toggle_temp & _MERCURY)) {
@@ -228,7 +226,6 @@ void Snr_Wand_Parameter(void) {
       } else
          shifter = 0;
    }
-*/
    if (TST_SGNL_CTL && TST_MERCURY && !(TST_SGNL_DELAY)) {
       SET_SGNL_STAT; // turn wand status on
    } else {
